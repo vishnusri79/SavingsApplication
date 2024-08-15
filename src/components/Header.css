@@ -1,0 +1,82 @@
+.header {
+    display: flex; /* Use flexbox layout for the header */
+    justify-content: space-between; /* Space out the children elements (logo and nav) */
+    align-items: center; /* Center the children elements vertically */
+    padding: 40px 20px; /* Add padding around the header */
+    background-color: #FEE869; /* Set the background color of the header */
+}
+
+.logo {
+    display: flex; /* Use flexbox layout for the logo section */
+    align-items: center; /* Center the logo image vertically */
+    position: relative; /* Position the logo relative to allow absolute positioning of hover text */
+    transition: transform 0.3s ease; /* Smooth animation for scaling */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Scale up the logo on hover */
+}
+
+.logo-image {
+    width: 250px; /* Set the width of the logo image */
+    height: 45px; /* Set the height of the logo image */
+}
+
+.hover-text {
+    position: absolute; /* Position the hover text absolutely within the logo container */
+    top: 30px; /* Position the text below the logo image */
+    left: 50%; /* Center the text horizontally */
+    transform: translateX(-50%); /* Center the text horizontally */
+    font-size: 20px; /* Set the font size for the hover text */
+    color: black; /* Set the text color for the hover text */
+    opacity: 0; /* Make the text invisible initially */
+    animation: fadeIn 0.5s forwards; /* Fade in the text on hover */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Make the text visible */
+    }
+}
+
+nav ul {
+    list-style: none; /* Remove default bullet points from the list */
+    display: flex; /* Use flexbox layout for the navigation list */
+    gap: 20px; /* Add space between the list items */
+    margin: 0; /* Remove default margin from the list */
+    padding: 0; /* Remove default padding from the list */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from the links */
+    color: #BD4538; /* Set the text color for the links */
+    font-size: 18px; /* Set the font size for the links */
+    transition: color 0.3s ease; /* Smooth animation for text color change */
+}
+
+nav ul li a:hover {
+    color: black; /* Change text color on hover */
+}
+
+.btn {
+    border: 2px solid #BD4538; /* Set the border color and width */
+    border-radius: 20px; /* Make the borders rounded */
+    padding: 5px 15px; /* Add padding inside the buttons */
+    text-decoration: none; /* Remove underline from the button links */
+    color: white; /* Set the text color to white */
+    background-color: #BD4538; /* Set the background color of the buttons */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth animation for background and text color changes */
+}
+
+.btn.login {
+    margin-left: 20px; /* Add left margin to the login button */
+}
+
+.btn.signup {
+    margin-left: 10px; /* Add left margin to the signup button */
+}
+
+.btn:hover {
+    background-color: #FEE869; /* Change background color on hover */
+    color: #BD4538; /* Change text color on hover */
+}

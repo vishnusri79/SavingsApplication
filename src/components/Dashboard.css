@@ -1,0 +1,102 @@
+.dashboard-container {
+    padding: 40px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.username {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.info-section {
+    width: 100%;
+    text-align: left;
+}
+
+.country-label, .income-label {
+    display: block;
+    margin-bottom: 10px;
+    color: #444;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.country-select, .income-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+}
+
+.income-input-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.currency-symbol {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #666;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.income-display {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: green;
+}
+
+.income-display h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.proceed-button {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #FEE869;
+    border-radius: 20px;
+    background-color: #28a745; /* Green background for proceed button */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.proceed-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}

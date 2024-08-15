@@ -1,0 +1,52 @@
+/* Common styles for both GoldShow and SilverShow */
+
+.show-container {
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.price-table th, .price-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.price-table th {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+}
+
+.price-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.price-table tr:hover {
+    background-color: #ddd;
+}
+
+.price-table td {
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+.price-table td.price {
+    font-weight: bold;
+    color: #2980b9;
+}
