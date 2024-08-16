@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Registration</title>
+    <link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css}">
+</head>
+<body>
+<div class="container">
+    <h1 class="mt-5">User Registration</h1>
+    <form action="#" th:action="@{/register}" th:object="${user}" method="post">
+        <div class="form-group">
+            <label>Username:</label>
+            <input type="text" class="form-control" th:field="*{username}" />
+        </div>
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="email" class="form-control" th:field="*{email}" />
+        </div>
+        <div class="form-group">
+            <label>Password:</label>
+            <input type="password" class="form-control" th:field="*{password}" />
+        </div>
+        <div class="form-group">
+            <label>Country:</label>
+            <input type="text" class="form-control" th:field="*{country}" />
+        </div>
+        <div class="form-group">
+            <label>Annual Income:</label>
+            <input type="number" class="form-control" th:field="*{annualIncome}" />
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+</div>
+</body>
+</html>
